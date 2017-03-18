@@ -1,24 +1,15 @@
-# README
+Create new myrecipes app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Minitest
 
-Things you may want to cover:
+Layout of the application
 
-* Ruby version
+Integration testing- makes sure a feature works
 
-* System dependencies
+Model tests- unit testing: ex. making sure a user has less than 50 characters
 
-* Configuration
+TBD - design the app functionality based on a test-first approach
+Write the test for the functionality
+Build the minimum code necessary to make each test work
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Re-factor the code = "code doesn't smell" - clean code, confidence
