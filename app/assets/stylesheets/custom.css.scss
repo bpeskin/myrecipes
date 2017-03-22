@@ -38,14 +38,22 @@ $navbar-default-bg: #ff7519;
 	height: 300px;
 }
 
-#footer {
-	text-align: center;
+.footer span {
+	width: 100%;
+	position: relative;
+	margin-left: 3%;
 }
 
-#about-foot {
+.foot {
+	color: #ff7519;
+}
+
+.foot:hover {
+	color: #ffa76d;
+}
+
+.footer ul, li {
 	display: inline;
 	float: right;
-	color: #ff7519;
-	list-style-type: none;
-	margin-right: 5%;
+	margin-right: 3%;
 }
