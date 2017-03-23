@@ -39,7 +39,6 @@ $navbar-default-bg: #ff7519;
 }
 
 .footer span {
-	width: 100%;
 	position: relative;
 	margin-left: 3%;
 }
@@ -52,8 +51,9 @@ $navbar-default-bg: #ff7519;
 	color: #ffa76d;
 }
 
-.footer ul, li {
+.footer ul {
 	display: inline;
 	float: right;
+	list-style-type: none;
 	margin-right: 3%;
 }

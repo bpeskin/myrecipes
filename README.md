@@ -19,3 +19,7 @@ Look at some sample layouts for homepage, and come up with a homepage design
 -create a mockup
 
 Database and 1:m associations
+
+-Relational Databases
+-SQL - Structured Query Language
+- ActiveRecord - 
