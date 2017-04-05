@@ -22,4 +22,27 @@ Database and 1:m associations
 
 -Relational Databases
 -SQL - Structured Query Language
-- ActiveRecord - 
+- ActiveRecord - abstraction layer - Ruby - translated to 	SQL
+
+Understand database layer, Associations
+
+1:m, m:m
+
+Object Relational Mapper - ORM - uses ruby code to interact with database - Relational database
+
+has_many- 1 side
+
+belongs_to- many side
+
+Recipe- 
+	-Recipe should be valid
+	-Name should be present
+	-Description should be present
+	-chef_id should be present**
+	-maximum length for name and description
+
+Chef-
+	-chefname and email should be present
+	-size restrictions on name and email
+	email address should be in valid format
+	email should be unique, case insensitive
