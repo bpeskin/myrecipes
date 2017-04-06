@@ -46,3 +46,13 @@ Chef-
 	-size restrictions on name and email
 	email address should be in valid format
 	email should be unique, case insensitive
+
+
+Prefix  		Verb 		URI Pattern       Controller#Action
+recipes 		GET	 		/recipes					recipes#index
+new_recipe	GET			/recipes/new 			recipes#new
+						POST		/recipes					recipes#create
+edit_recipe	GET			/recipes/:id/edit recipes#edit
+						PATCH		/recipes/:id 			recipes#update
+recipe 			GET   	/recipes/:id 			recipes#show
+						DELETE 	/recipes/:id 			recipes#destroy
