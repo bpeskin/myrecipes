@@ -32,6 +32,11 @@ $navbar-default-bg: #ff7519;
 	border: #ffa76d;
 }
 
+.btn-color:active {
+	background: #ffa76d;
+	border: #ffa76d;
+}
+
 .jumbotron {
 	background-image: asset-url('view.jpg');
 	background-size: cover;
@@ -60,6 +65,28 @@ $navbar-default-bg: #ff7519;
 
 .row {
 	border: .1em solid gray;
-	border-radius: 3em;
-	background-color: #BFBFBF;
+	border-radius: 2em;
+	background-color: #d8d8d8;
+	padding: 2%;
+}
+
+.description {
+	margin-top: 0;
+}
+
+.index-link a {
+	color: #ff7519;
+}
+
+.chef_info {
+	padding: 10%;
+}
+
+.index-link-padding {
+	padding-top: 1%;
+}
+
+#error-msg {
+	background: none;
+	border: none;
 }
