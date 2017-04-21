@@ -3,6 +3,10 @@ $navbar-default-bg: #ff7519;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+html, body {
+	padding-top: 1.75%;
+}
+
 #logo {
 	float: left;
 	font-size: 1.7em;
@@ -97,4 +101,11 @@ $navbar-default-bg: #ff7519;
 	a {
 		color: #fff;
 	}
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	z-index: 11;
+	margin-top: -3.5%;
 }
