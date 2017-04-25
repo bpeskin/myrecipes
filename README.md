@@ -56,3 +56,8 @@ edit_recipe	GET			/recipes/:id/edit recipes#edit
 						PATCH		/recipes/:id 			recipes#update
 recipe 			GET   	/recipes/:id 			recipes#show
 						DELETE 	/recipes/:id 			recipes#destroy
+
+
+password_digest: password, password_confirmation
+
+authenticate
