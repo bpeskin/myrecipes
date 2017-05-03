@@ -1,17 +1,19 @@
-<% obj.each do |recipe| %>
-	<div class="row">
-		<div class="col-md-2">
-			<section class="chef_info center">
-				<%= gravatar_for(recipe.chef, size: 80) %>
-			</section>
-		</div>
-		<div class="col-md-8 index-link">
-			<h4><%= link_to recipe.name, recipe_path(recipe) %></h4>
-			<p><%= truncate(recipe.description, length: 150) %></p>
-			<p>
-				<span class="quiet"><small><%= time_ago_in_words(recipe.created_at) %></small></span>
-			</p>
-		</div>
-	</div>
-	<br />
-<% end %>
+<ul>
+	<% obj.each do |recipe| %>
+		<li>
+			<div class="col-md-2">
+				<div class="chef_info center">
+					<%= gravatar_for(recipe.chef, size: 100) %>
+				</div>
+			</div>
+			<div class="col-md-10 index-link well">
+				<h4><%= link_to recipe.name, recipe_path(recipe) %></h4>
+				<p><%= truncate(recipe.description, length: 150) %></p>
+				<p>
+					<span class="quiet"><small><%= time_ago_in_words(recipe.created_at) %>  ago</small></span>
+				</p>
+			</div>
+		</li>
+		<br />
+	<% end %>
+</ul>
