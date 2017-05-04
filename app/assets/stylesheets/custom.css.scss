@@ -5,6 +5,7 @@ $navbar-default-bg: #ff7519;
 
 html, body {
 	padding-top: 1.75%;
+	display: block;
 }
 
 #logo {
@@ -123,4 +124,8 @@ html, body {
 	color: #ff7519;
 	font-weight: bold;
 	font-size: 1.25em;
+}
+
+.block-display {
+	display: block;
 }
