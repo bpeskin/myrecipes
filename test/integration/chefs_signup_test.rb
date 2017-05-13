@@ -24,7 +24,6 @@ class ChefsSignupTest < ActionDispatch::IntegrationTest
   	end
   	follow_redirect!
   	assert_template 'chefs/show'
-  	assert_select 'h2.panel-title'
   	assert_select 'div.panel-body'
   	assert_not flash.empty?
   end
