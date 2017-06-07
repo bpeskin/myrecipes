@@ -57,7 +57,7 @@ class RecipesController < ApplicationController
 		end
 
 		def require_same_user
-			if current_chef != @recipe.chef
+			if current_chef != @recipe.chef && !current_chef.admin?
 				flash[:danger] = "You do not have permission to perform that action"
 				redirect_to recipe_path(@recipe)
 			end
