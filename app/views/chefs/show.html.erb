@@ -8,14 +8,20 @@
 	</div>
 </div>
 
-<div class="recipe-title">
-	<h2 align="center"><%= @chef.chefname %>'s recipes</h2>
-	<br />
-	<div class="center">
-		<%= will_paginate @chef_recipes %>
+<% if @chef.recipes.count != 0 %>
+	<div class="recipe-title">
+		<h2 align="center"><%= @chef.chefname %>'s recipes</h2>
+		<br />
+		<div class="center">
+			<%= will_paginate @chef_recipes %>
+		</div>
+		<%= render 'recipes/recipe', obj: @chef_recipes %>
+		<div class="center">
+			<%= will_paginate @chef_recipes %>
+		</div>
 	</div>
-	<%= render 'recipes/recipe', obj: @chef_recipes %>
-	<div class="center">
-		<%= will_paginate @chef_recipes %>
+<% else %>
+	<div class="recipe-title">
+		<h2 align="center"><%= @chef.chefname %> has no recipes yet</h2>
 	</div>
-</div>
+<% end %>

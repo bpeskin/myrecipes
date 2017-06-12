@@ -10,7 +10,20 @@
 				<h4><%= link_to recipe.name, recipe_path(recipe) %></h4>
 				<p><%= truncate(recipe.description, length: 150) %></p>
 				<p>
-					<span class="quiet"><small><%= time_ago_in_words(recipe.created_at) %>  ago</small></span>
+					<small><%= pluralize(recipe.comments.count, "comment") if recipe.comments.count != 0 %></small>
+				</p>
+				<p>
+					<% if recipe.ingredients.count != 0 %>
+						<span style="text-decoration: underline;">Ingredients:</span>
+						<% recipe.ingredients.each do |ing| %>
+							<span class="badge"><%= link_to ing.name, ingredient_path(ing) %> &nbsp; </span>
+						<% end %>
+					<% else %>
+						<div style="text-decoration: underline;">No ingredients yet</div>
+					<% end %>
+				</p>
+				<p>
+					<span class="quiet"><small><%= time_ago_in_words(recipe.created_at) %>  ago by <%= recipe.chef.chefname %></small></span>
 				</p>
 				<% if logged_in? && (current_chef == recipe.chef || current_chef.admin?) %>
 					<div class="recipe-action">
