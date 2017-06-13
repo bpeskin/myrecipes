@@ -13,16 +13,15 @@
 			</div>
 			<div class="form-group">
 				<div class="control-label col-md-2">
-						<%= f.label :description, "Steps:" %>
-					</div>
-					<div class="col-md-8">
-						<%= f.text_area :description, rows: 10, class: "form-control", placeholder: "Enter steps to create recipe" %>
-					</div>
+					<%= f.label :description, "Steps:" %>
+				</div>
+				<div class="col-md-8">
+					<%= f.text_area :description, rows: 10, class: "form-control", placeholder: "Enter steps to create recipe" %>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="col-md-offset-2 col-md-10">
-					<%= f.submit class: "btn btn-warning btn-primary btn-lg btn-xlarge btn-color" %>
+					<%= f.submit(@recipe.new_record? ? "Create Recipe" : "Update my Recipe", class: "btn btn-warning btn-primary btn-lg btn-xlarge btn-color") %>
 				</div>
 			</div>
 		<% end %>
